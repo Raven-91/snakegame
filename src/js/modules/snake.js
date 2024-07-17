@@ -61,28 +61,24 @@ export class Snake {
 
         if (this.currentDirection === 'left') {
             if (newHeadPosition.x === 1) {
-                // newHeadPosition.x = this.positionsCount;
                 result.collision = true;
             } else {
                 newHeadPosition.x -= 1;
             }
         } else if (this.currentDirection === 'right') {
             if (newHeadPosition.x === this.positionsCount) {
-                // newHeadPosition.x = 1;
                 result.collision = true;
             } else {
                 newHeadPosition.x += 1;
             }
         } else if (this.currentDirection === 'up') {
             if (newHeadPosition.y === 1) {
-                // newHeadPosition.y = this.positionsCount;
                 result.collision = true;
             } else {
                 newHeadPosition.y -= 1;
             }
         } else if (this.currentDirection === 'down') {
             if (newHeadPosition.y === this.positionsCount) {
-                // newHeadPosition.y = 1;
                 result.collision = true;
             } else {
                 newHeadPosition.y += 1;
